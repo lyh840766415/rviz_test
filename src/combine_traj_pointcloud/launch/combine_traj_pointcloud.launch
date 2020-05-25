@@ -1,12 +1,12 @@
 <launch>
 
   <node pkg="combine_traj_pointcloud" type="combine_traj_pointcloud" name="combine_traj_pointcloud" output="screen">
-    <param name="input_traj_file" value="/home/lyh/lab/data/iking0307/20200308_del.txt"/>
-    <param name="input_lidar_bag" value="/home/lyh/lab/data/iking0307/iking_20200307_all.bag"/>
-    <param name="output_save_path" value="/home/lyh/lab/data/tmp_result"/>
-    <param name="save_per_point" value="10000"/>
-    <param name="rot_trans" value=" -0.0631083,-0.997561,-0.0298444,0.0016606,0.343508,-0.0497887,0.937829,0.0124406,-0.937027,0.0489329,0.345812,1.30646e-05"/>
-    <param name="time_offset" value="6389.17"/>
+    <param name="input_traj_file" value="/home/lyh/lab/data/huigu_0422/202004221612_trj.txt"/>
+    <param name="input_lidar_bag" value="/home/lyh/lab/data/huigu_0422/202004221612.bag"/>
+    <param name="output_save_path" value="/home/lyh/lab/data/tmp_result/202004221612"/>
+    <param name="save_per_point" value="30000"/>
+    <param name="rot_trans" value="-0.0545541,-0.998346,-0.0181306,-0.00146165,0.349228,-0.036088,0.936343,0.0128432,-0.935448,0.0447496,0.350619,0.00087475"/>
+    <param name="time_offset" value="-1095.24"/>
   </node>
 
 </launch>

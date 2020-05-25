@@ -5,6 +5,7 @@
 #include "iostream"
 #include <iomanip>
 #include <vector>
+#include <fstream>
 
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
@@ -503,6 +504,18 @@ int main(int argc, char **argv)
     }
 
     tf.close();
+
+    std::ofstream offset(output_save_path + "/offset.txt",std::ios::app);
+
+    if(!offset.is_open())
+    {
+        std::cout<<"failed to save offset"<<std::endl;
+        return 0;
+    }
+
+    offset<<std::fixed<<std::setprecision(5)<<"x = "<<base_east<<", y = "<<base_north<<"z = "<<base_up<<std::endl;
+
+    offset.close();
 
     for(int i = 0;i<last_time;i++)
     {

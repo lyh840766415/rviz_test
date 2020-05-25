@@ -1,8 +1,8 @@
 <launch>
 
   <node pkg="transform_traj_format" type="transform_traj_format" name="transform_traj_format" output="screen">
-    <param name="input_traj_file" value="/home/lyh/lab/data/iking0307/20200308_del.txt"/>
-    <param name="output_traj_file" value="/home/lyh/lab/data/iking0307/transformed_format.csv"/>
+    <param name="input_traj_file" value="/home/lyh/lab/data/livox_0523/2020523-2.txt"/>
+    <param name="output_traj_file" value="/home/lyh/lab/data/livox_0523/transformed_format.csv"/>
   </node>
 
 </launch>
